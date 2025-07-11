@@ -36,9 +36,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 bg-slate-800/50">
+    <section id="skills" className="py-20 px-4 bg-slate-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
+        <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">
           Skills & Technologies
         </h2>
         
@@ -46,13 +46,13 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors duration-300 group"
+              className="bg-white rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 group border border-slate-200"
             >
-              <div className="text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
                 {category.icon}
               </div>
               
-              <h3 className="text-xl font-semibold text-white mb-4">
+              <h3 className="text-xl font-semibold text-slate-800 mb-4">
                 {category.title}
               </h3>
               
@@ -60,7 +60,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm hover:bg-blue-500 hover:text-white transition-colors duration-200"
+                    className="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-200"
                   >
                     {skill}
                   </span>

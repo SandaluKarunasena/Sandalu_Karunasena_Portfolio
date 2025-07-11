@@ -1,14 +1,14 @@
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
+        <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">
           About Me
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 text-slate-300">
+          <div className="space-y-6 text-slate-600">
             <p className="text-lg leading-relaxed">
               I'm a passionate software engineer with a strong foundation in full-stack development. 
               My journey in technology spans across web development, mobile applications, and modern 
@@ -28,8 +28,8 @@ const About = () => {
           </div>
           
           <div className="relative">
-            <div className="bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg p-1">
-              <div className="bg-slate-800 rounded-lg p-8">
+            <div className="bg-gradient-to-br from-primary to-blue-600 rounded-lg p-1">
+              <div className="bg-white rounded-lg p-8">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
                   alt="Sandalu Karunasena"

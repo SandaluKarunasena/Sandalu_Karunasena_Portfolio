@@ -42,33 +42,33 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 bg-slate-800/50">
+    <section id="experience" className="py-20 px-4 bg-slate-50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
+        <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">
           Experience
         </h2>
         
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-blue-500 transform md:-translate-x-px"></div>
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary transform md:-translate-x-px"></div>
           
           {experiences.map((exp, index) => (
             <div key={index} className="relative mb-12 md:mb-16">
               {/* Timeline dot */}
-              <div className="absolute left-6 md:left-1/2 w-4 h-4 bg-blue-500 rounded-full transform md:-translate-x-2 z-10"></div>
+              <div className="absolute left-6 md:left-1/2 w-4 h-4 bg-primary rounded-full transform md:-translate-x-2 z-10"></div>
               
               <div className={`md:w-1/2 ml-16 md:ml-0 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8 md:ml-auto'}`}>
-                <div className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors duration-300">
+                <div className="bg-white rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 border border-slate-200">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-1">
+                      <h3 className="text-xl font-bold text-slate-800 mb-1">
                         {exp.title}
                       </h3>
-                      <h4 className="text-blue-400 font-semibold mb-2">
+                      <h4 className="text-primary font-semibold mb-2">
                         {exp.company}
                       </h4>
                     </div>
-                    <div className="text-slate-300 text-sm space-y-1">
+                    <div className="text-slate-500 text-sm space-y-1">
                       <div className="flex items-center">
                         <Calendar className="w-4 h-4 mr-2" />
                         {exp.period}
@@ -80,14 +80,14 @@ const Experience = () => {
                     </div>
                   </div>
                   
-                  <p className="text-slate-300 mb-4 leading-relaxed">
+                  <p className="text-slate-600 mb-4 leading-relaxed">
                     {exp.description}
                   </p>
                   
                   <ul className="space-y-2">
                     {exp.achievements.map((achievement, achIndex) => (
-                      <li key={achIndex} className="text-slate-400 text-sm flex items-start">
-                        <span className="text-blue-400 mr-2">▸</span>
+                      <li key={achIndex} className="text-slate-500 text-sm flex items-start">
+                        <span className="text-primary mr-2">▸</span>
                         {achievement}
                       </li>
                     ))}

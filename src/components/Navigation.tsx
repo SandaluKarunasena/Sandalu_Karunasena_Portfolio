@@ -30,11 +30,11 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-slate-900/95 backdrop-blur-sm border-b border-slate-700' : 'bg-transparent'
+      isScrolled ? 'bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-sm' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold text-white">
+          <div className="text-2xl font-bold text-slate-800">
             Sandalu Karunasena
           </div>
 
@@ -44,7 +44,7 @@ const Navigation = () => {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-slate-300 hover:text-blue-400 transition-colors duration-200 font-medium"
+                className="text-slate-600 hover:text-primary transition-colors duration-200 font-medium"
               >
                 {item.label}
               </button>
@@ -53,7 +53,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-slate-800"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -62,12 +62,12 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-slate-800 rounded-lg mt-2 p-4">
+          <div className="md:hidden bg-white rounded-lg mt-2 p-4 shadow-lg border border-slate-200">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left py-2 text-slate-300 hover:text-blue-400 transition-colors duration-200"
+                className="block w-full text-left py-2 text-slate-600 hover:text-primary transition-colors duration-200"
               >
                 {item.label}
               </button>
