@@ -31,7 +31,7 @@ const About = () => {
             <div className="bg-gradient-to-br from-primary to-blue-600 rounded-lg p-1">
               <div className="bg-white rounded-lg p-8">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                  src="/Profile_Picture.JPG"
                   alt="Sandalu Karunasena"
                   className="w-full rounded-lg grayscale hover:grayscale-0 transition-all duration-300"
                 />
