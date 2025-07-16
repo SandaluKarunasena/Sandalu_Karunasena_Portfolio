@@ -1,5 +1,5 @@
 
-import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
+import { ChevronDown, Github, Linkedin, Mail, PenTool } from "lucide-react";
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -24,7 +24,7 @@ const Hero = () => {
           
           <div className="flex justify-center space-x-6 mb-16">
             <a
-              href="https://github.com/sandalu-umayanga"
+              href="https://github.com/SandaluKarunasena"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white hover:bg-slate-50 rounded-full transition-colors duration-200 group shadow-md border border-slate-200"
@@ -40,7 +40,15 @@ const Hero = () => {
               <Linkedin className="w-6 h-6 text-slate-600 group-hover:text-slate-800" />
             </a>
             <a
-              href="mailto:sandalu.karunasena@example.com"
+                href="https://medium.com/@sandalukarunasena98"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white hover:bg-slate-50 rounded-full transition-colors duration-200 group shadow-md border border-slate-200"
+            >
+              <PenTool className="w-6 h-6 text-slate-600 group-hover:text-slate-800" />
+            </a>
+            <a
+              href="mailto:sandalukarunasena98@gmail.com"
               className="p-3 bg-white hover:bg-slate-50 rounded-full transition-colors duration-200 group shadow-md border border-slate-200"
             >
               <Mail className="w-6 h-6 text-slate-600 group-hover:text-slate-800" />
