@@ -5,93 +5,104 @@ const Experience = () => {
   const experiences = [
     {
       title: "Senior Software Engineer",
-      company: "Tech Innovation Corp",
-      location: "Remote",
-      period: "2022 - Present",
-      description: "Lead full-stack development projects, mentor junior developers, and architect scalable solutions using modern technologies.",
+      company: "Synegern Health (PVT) Ltd",
+      location: "Colombo, Sri Lanka",
+      period: "May 2025 - Present",
+      description: "Leading security enhancements and system architecture improvements for healthcare billing systems, focusing on vulnerability assessments and client onboarding optimization.",
       achievements: [
-        "Led development of microservices architecture serving 100k+ users",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Mentored 5 junior developers and conducted code reviews"
+        "Addressed security vulnerabilities through VAPT tasks, resolving SQL injections using JPA",
+        "Enabled HSTS/CSP headers in AWS Lambda and secured Spring Boot actuator endpoints",
+        "Revamped invoice & statement generation flow for ambulance sector clients",
+        "Led full development lifecycle including planning, designing, and time estimation of user stories"
       ]
     },
     {
-      title: "Full-Stack Developer",
-      company: "Digital Solutions Ltd",
+      title: "Software Engineer",
+      company: "Synegern Health (PVT) Ltd",
       location: "Colombo, Sri Lanka",
-      period: "2020 - 2022",
-      description: "Developed and maintained web applications using React, Node.js, and PostgreSQL. Collaborated with cross-functional teams to deliver high-quality products.",
+      period: "August 2023 - April 2025",
+      description: "Developed robust financial analytics and client support systems using Angular, Java, Spring Boot, and MySQL, serving 800+ clients managing $26M in global receivables.",
       achievements: [
-        "Built responsive web applications with 99.9% uptime",
-        "Optimized database queries improving performance by 40%",
-        "Implemented automated testing reducing bugs by 50%"
+        "Engineered account receivable analytics dashboard with caching and optimization",
+        "Built client support feature that reduced support tickets by 60% through threaded discussions",
+        "Upgraded frontend portal from Angular 9 to Angular 15, improving performance and maintainability",
+        "Redesigned notification panel, cutting notification incidents by 70%",
+        "Implemented Okta login event tracking for enhanced security monitoring"
       ]
     },
     {
-      title: "Junior Software Developer",
-      company: "StartUp Innovations",
+      title: "Software Engineer Intern",
+      company: "Embla Software Innovation (PVT) Ltd",
       location: "Colombo, Sri Lanka",
-      period: "2019 - 2020",
-      description: "Started career focusing on frontend development with React and Vue.js. Gained experience in agile development methodologies.",
+      period: "December 2021 - July 2022",
+      description: "Worked on large-scale hospitality management system for LosjiTech using Angular, NestJS, TypeScript, PostgreSQL, and AWS in an 11-member team.",
       achievements: [
-        "Contributed to 3 successful product launches",
-        "Learned modern development practices and tools",
-        "Collaborated with design team to implement pixel-perfect UIs"
+        "Introduced and implemented diagram maker tool for articles using GoJS library",
+        "Automated nightly data synchronization with cron jobs, saving 25 hours monthly",
+        "Developed password recovery system with AWS Cognito API, eliminating 90% of related support tickets",
+        "Awarded Best Industrial Trainee In Sri Lanka 2021/2022 by Institution of Engineers Sri Lanka"
       ]
     }
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 bg-slate-50">
-      <div className="max-w-4xl mx-auto">
+    <section id="experience" className="py-20 px-4 bg-white">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">
           Experience
         </h2>
         
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary transform md:-translate-x-px"></div>
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary to-primary/30 transform md:-translate-x-px"></div>
           
           {experiences.map((exp, index) => (
             <div key={index} className="relative mb-12 md:mb-16">
               {/* Timeline dot */}
-              <div className="absolute left-6 md:left-1/2 w-4 h-4 bg-primary rounded-full transform md:-translate-x-2 z-10"></div>
+              <div className="absolute left-6 md:left-1/2 w-4 h-4 bg-primary rounded-full transform md:-translate-x-2 z-10 shadow-lg border-2 border-white"></div>
               
               <div className={`md:w-1/2 ml-16 md:ml-0 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8 md:ml-auto'}`}>
-                <div className="bg-white rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 border border-slate-200">
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                <div className="bg-gradient-to-br from-slate-50 to-white rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 border border-slate-200 relative overflow-hidden group">
+                  
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-6">
                     <div>
-                      <h3 className="text-xl font-bold text-slate-800 mb-1">
+                      <h3 className="text-xl font-bold text-slate-800 mb-2">
                         {exp.title}
                       </h3>
-                      <h4 className="text-primary font-semibold mb-2">
+                      <h4 className="text-primary font-semibold mb-2 text-lg">
                         {exp.company}
                       </h4>
                     </div>
-                    <div className="text-slate-500 text-sm space-y-1">
+                    <div className="text-slate-500 text-sm space-y-2">
                       <div className="flex items-center">
-                        <Calendar className="w-4 h-4 mr-2" />
-                        {exp.period}
+                        <Calendar className="w-4 h-4 mr-2 text-primary" />
+                        <span className="font-medium">{exp.period}</span>
                       </div>
                       <div className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2" />
-                        {exp.location}
+                        <MapPin className="w-4 h-4 mr-2 text-primary" />
+                        <span className="font-medium">{exp.location}</span>
                       </div>
                     </div>
                   </div>
                   
-                  <p className="text-slate-600 mb-4 leading-relaxed">
+                  <p className="text-slate-600 mb-6 leading-relaxed font-medium">
                     {exp.description}
                   </p>
                   
-                  <ul className="space-y-2">
-                    {exp.achievements.map((achievement, achIndex) => (
-                      <li key={achIndex} className="text-slate-500 text-sm flex items-start">
-                        <span className="text-primary mr-2">▸</span>
-                        {achievement}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="bg-white/70 rounded-lg p-4 border border-slate-200/50">
+                    <h5 className="font-semibold text-slate-700 mb-3 flex items-center">
+                      <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                      Key Achievements
+                    </h5>
+                    <ul className="space-y-3">
+                      {exp.achievements.map((achievement, achIndex) => (
+                        <li key={achIndex} className="text-slate-600 text-sm flex items-start">
+                          <span className="text-primary mr-3 mt-1 text-base">▸</span>
+                          <span className="flex-1">{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
