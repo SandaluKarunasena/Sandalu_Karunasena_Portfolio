@@ -1,37 +1,37 @@
 
-import { Code, Database, Globe, Smartphone, Server, Palette } from "lucide-react";
+import { Code, Database, Server, Palette, Shield, Cloud } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
       icon: <Code className="w-8 h-8" />,
       title: "Frontend Development",
-      skills: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "Next.js"]
+      skills: ["Angular", "React Native", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"]
     },
     {
       icon: <Server className="w-8 h-8" />,
       title: "Backend Development",
-      skills: ["Node.js", "Python", "Java", "Express", "FastAPI"]
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile Development",
-      skills: ["React Native", "Flutter", "iOS", "Android"]
+      skills: ["Java", "Spring Boot", "Python", "NodeJS", "NestJS", "REST API"]
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: "Database & Cloud",
-      skills: ["PostgreSQL", "MongoDB", "AWS", "Firebase", "Docker"]
+      title: "Database Technologies",
+      skills: ["MySQL", "PostgreSQL", "MongoDB", "JPA"]
     },
     {
-      icon: <Globe className="w-8 h-8" />,
-      title: "Web Technologies",
-      skills: ["HTML5", "CSS3", "JavaScript", "REST APIs", "GraphQL"]
+      icon: <Cloud className="w-8 h-8" />,
+      title: "Cloud & DevOps",
+      skills: ["AWS", "AWS Lambda", "AWS Cognito", "Docker", "CI/CD"]
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Security & Monitoring",
+      skills: ["Okta", "VAPT", "HSTS", "CSP", "Grafana"]
     },
     {
       icon: <Palette className="w-8 h-8" />,
-      title: "Design & Tools",
-      skills: ["Figma", "Git", "VS Code", "Photoshop", "UI/UX"]
+      title: "Tools & Methodologies",
+      skills: ["Git", "Bitbucket", "Postman", "Jira", "Agile/Scrum", "JUnit"]
     }
   ];
 
