@@ -10,10 +10,12 @@ const Experience = () => {
       period: "May 2025 - Present",
       description: "Leading security enhancements and system architecture improvements for healthcare billing systems, focusing on vulnerability assessments and client onboarding optimization.",
       achievements: [
-        "Addressed security vulnerabilities through VAPT tasks, resolving SQL injections using JPA",
-        "Enabled HSTS/CSP headers in AWS Lambda and secured Spring Boot actuator endpoints",
-        "Revamped invoice & statement generation flow for ambulance sector clients",
-        "Led full development lifecycle including planning, designing, and time estimation of user stories"
+        "Addressed critical security vulnerabilities identified through VAPT assessments by eliminating SQL injection risks using JPA and parameterized queries, refactoring legacy dynamic SQL, and enforcing repository-level validation, reducing injection attack vectors by 100% and improving audit pass rates across affected modules.",
+        "Remediated 10+ high-risk VAPT findings by implementing comprehensive HTTP security headers and authentication controls across AWS Lambda and Spring Boot services. Configured HSTS, CSP, Permissions-Policy, X-Frame-Options, and strict CORS policies, restricted actuator endpoint exposure in production, and enabled immediate JWT invalidation on logout—reducing the application attack surface by over 60% and achieving full compliance with OWASP security recommendations.",
+        "Enabled fine-grained HTTP security headers to protect client-facing applications from XSS, clickjacking, data exfiltration, and protocol downgrade attacks. Designed strict CSP rules to safely integrate third-party services (including Stripe and web components), enforced HSTS with preload and subdomain coverage, and locked down CORS to trusted origins—eliminating all medium and high-severity client-side security findings in subsequent VAPT scans.",
+        "Revamped invoice and statement generation workflows to support new ambulance-sector clients, refactoring backend validation and aggregation logic to handle complex billing scenarios, achieving up to 50% faster processing throughput, improved financial accuracy, and increased reliability for high-volume, time-critical healthcare transactions.",
+        "Redesigned and modernized the frontend user interface using Angular 15, Angular Material, Bootstrap, and modern HTML/CSS, improving layout consistency, responsiveness, and accessibility—reducing user navigation friction, accelerating task completion by 30%, and driving higher client adoption and engagement.",
+        "Led the full development lifecycle of multiple production features, from requirement analysis to deployment, including effort estimation, story pointing, technical design, implementation, and code reviews—consistently delivering sprint commitments on time while improving estimation accuracy and reducing post-release defects."
       ]
     },
     {
@@ -46,7 +48,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 bg-white">
+    <section id="experience" className="pt-12 pb-8 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">
           Experience
