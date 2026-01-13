@@ -21,7 +21,7 @@ const Skills = () => {
     {
       icon: <Cloud className="w-8 h-8" />,
       title: "Cloud & DevOps",
-      skills: ["AWS", "AWS Lambda", "AWS Cognito", "Docker", "CI/CD"]
+      skills: ["AWS", "AWS Lambda", "AWS Cognito", "AWS S3", "AWS API Gateway", "Docker", "CI/CD"]
     },
     {
       icon: <Shield className="w-8 h-8" />,
@@ -31,12 +31,12 @@ const Skills = () => {
     {
       icon: <Palette className="w-8 h-8" />,
       title: "Tools & Methodologies",
-      skills: ["Git", "Bitbucket", "Postman", "Jira", "Agile/Scrum", "JUnit"]
+      skills: ["Git", "Bitbucket", "Postman", "Jira", "Agile/Scrum", "JUnit", "Claude Code AI"]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 bg-slate-50">
+    <section id="skills" className="pt-12 pb-8 px-4 bg-slate-50">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">
           Skills & Technologies
