@@ -11,7 +11,7 @@ const Experience = () => {
       description: "Leading security enhancements and system architecture improvements for healthcare billing systems, focusing on vulnerability assessments and client onboarding optimization.",
       achievements: [
         "Eliminated SQL injection vulnerabilities discovered in VAPT assessments by refactoring legacy dynamic SQL to use JPA and parameterized queries. Enforced repository-level validation that reduced injection attack vectors by 100% and improved audit pass rates across all affected modules.",
-        "Fixed 10+ high-risk VAPT findings by implementing HTTP security headers and authentication controls across AWS Lambda and Spring Boot services. Set up HSTS, CSP, Permissions-Policy, X-Frame-Options, and CORS policies at the API Gateway layer. Also restricted actuator endpoints in production and added immediate JWT invalidation on logout, cutting the attack surface by 60%+ and meeting all OWASP security requirements.",
+        "Fixed 10+ high-risk VAPT findings by implementing HTTP security headers and authentication controls across AWS Lambda and Spring Boot services. Set up HSTS, CSP, Permissions-Policy, X-Frame-Options, and CORS policies at the API Gateway layer. Also restricted actuator endpoints in production, cutting the attack surface by 60%+ and meeting all OWASP security requirements.",
         "Implemented client-side security headers to block XSS, clickjacking, data exfiltration, and protocol downgrade attacks. Created strict CSP rules that allowed integration with Stripe and web components while maintaining security. Configured HSTS with preload/subdomain support and locked down CORS to trusted origins only. This eliminated all medium and high-severity findings in follow-up VAPT scans.",
         "Rebuilt invoice and statement generation for new ambulance-sector clients, which required refactoring backend validation and aggregation logic to handle their complex billing scenarios. Improved processing speed by up to 50%, increased financial accuracy, and made the system more reliable for high-volume healthcare transactions.",
         "Redesigned the frontend UI using Angular 15, Angular Material, Bootstrap, and modern HTML/CSS to improve consistency, responsiveness, and accessibility. Better component structure and visual hierarchy reduced navigation friction and accelerated task completion by 30%, leading to higher client adoption.",
@@ -25,7 +25,7 @@ const Experience = () => {
       period: "August 2023 - April 2025",
       description: "Developed robust financial analytics and client support systems using Angular, Java, Spring Boot, and MySQL, serving 800+ clients managing $26M in global receivables.",
       achievements: [
-        "Engineered account receivable analytics dashboard with caching and optimization",
+        "Engineered account receivable analytics dashboard with Redis backend caching with @Cacheable and localStorage frontend caching. Optimized data retrieval using MySQL materialized views and single API call architecture. Achieved 85% faster load times with cache-first architecture.",
         "Built client support feature that reduced support tickets by 60% through threaded discussions",
         "Upgraded frontend portal from Angular 9 to Angular 15, improving performance and maintainability",
         "Redesigned notification panel, cutting notification incidents by 70%",
