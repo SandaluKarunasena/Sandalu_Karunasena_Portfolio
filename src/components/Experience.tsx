@@ -25,8 +25,8 @@ const Experience = () => {
       period: "August 2023 - April 2025",
       description: "Developed robust financial analytics and client support systems using Angular, Java, Spring Boot, and MySQL, serving 800+ clients managing $26M in global receivables.",
       achievements: [
-        "Engineered account receivable analytics dashboard with Redis backend caching with @Cacheable and localStorage frontend caching. Optimized data retrieval using MySQL materialized views and single API call architecture. Achieved 85% faster load times with cache-first architecture.",
-        "Built client support feature that reduced support tickets by 60% through threaded discussions",
+        "Engineered account receivable analytics dashboard with Redis backend caching with @Cacheable and localStorage frontend caching. Used ngx-echarts for better analytical UI visualization. Optimized data retrieval using MySQL materialized views and single API call architecture. Achieved 85% faster load times with cache-first architecture.",
+        "Built client support system with threaded discussions with Angular 9 Reactive Forms, Material Design UI, RxJS observables for asynchronous data flow, and real-time notifications with WebSocket. Implemented one-to-many thread-reply architecture with Spring Data JPA, Hibernate Envers auditing, and pagination using Spring Boot and JPA, reducing support tickets by 60%.",
         "Upgraded frontend portal from Angular 9 to Angular 15, improving performance and maintainability",
         "Redesigned notification panel, cutting notification incidents by 70%",
         "Implemented Okta login event tracking for enhanced security monitoring"
