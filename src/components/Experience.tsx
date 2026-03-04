@@ -29,7 +29,7 @@ const Experience = () => {
         "Engineered account receivable analytics dashboard with Redis backend caching with @Cacheable and localStorage frontend caching. Used ngx-echarts for better analytical UI visualization. Optimized data retrieval using MySQL materialized views and single API call architecture. Achieved 85% faster load times with cache-first architecture.",
         "Built client support system with threaded discussions with Angular 9 Reactive Forms, Material Design UI, RxJS observables for asynchronous data flow, and real-time notifications with WebSocket. Implemented one-to-many thread-reply architecture with Spring Data JPA, Hibernate Envers auditing, and pagination using Spring Boot and JPA, reducing support tickets by 60%.",
         "Upgraded enterprise Angular portal from v9 to v15 across 6 major versions, modernising the build pipeline, migrating 15+ lazy-loaded feature modules, 100+ components, and 35+ services while resolving breaking changes in Angular Material, TypeScript, and RxJS.",
-        "Redesigned notification panel, cutting notification incidents by 70%",
+        "Redesigned the real-time notification panel using STOMP/WebSocket over SockJS, replacing a polling-based approach with an event-driven architecture — cutting notification-related incidents by 70% through reliable push delivery, role-based topic filtering, and persistent read/unread state tracked server-side.",
         "Implemented Okta login event tracking for enhanced security monitoring"
       ]
     },
