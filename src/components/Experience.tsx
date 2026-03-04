@@ -15,7 +15,7 @@ const Experience = () => {
         "Implemented client-side security headers to block XSS, clickjacking, data exfiltration, and protocol downgrade attacks. Created strict CSP rules that allowed integration with Stripe and web components while maintaining security. Configured HSTS with preload/subdomain support and locked down CORS to trusted origins only. This eliminated all medium and high-severity findings in follow-up VAPT scans.",
         "Designed and delivered a full-stack polymorphic notes system where a single Note entity can reference multiple types of entities through the same foreign key. Implemented lazy-loaded relationships and RESTful APIs with pagination to enable secure note management across 13+ entities with advanced filtering, role-based access, and multi-tenant data isolation improving operational efficiency by 80%.",
         "Rebuilt invoice and statement generation for new ambulance-sector clients, which required refactoring backend validation and aggregation logic to handle their complex billing scenarios. Improved processing speed by up to 50%, increased financial accuracy, and made the system more reliable for high-volume healthcare transactions.",
-        "Redesigned the frontend UI using Angular 15, Angular Material, Bootstrap, and modern HTML/CSS to improve consistency, responsiveness, and accessibility. Better component structure and visual hierarchy reduced navigation friction and accelerated task completion by 30%, leading to higher client adoption.",
+        "Redesigned the frontend UI using Angular 15, Angular Material, Bootstrap, and modern HTML/CSS to improve consistency, responsiveness, and accessibility. Better component structure and visual hierarchy reduced navigation friction and accelerated task completion by 30%, leading to higher client adoption and retention(Natera Inc).",
         "Owned the complete development process for multiple production features - from analyzing requirements and estimating effort to designing technical solutions, writing code, and reviewing pull requests. Consistently hit sprint deadlines while improving estimation accuracy and reducing post-release bugs."
       ]
     },
@@ -28,7 +28,7 @@ const Experience = () => {
       achievements: [
         "Engineered account receivable analytics dashboard with Redis backend caching with @Cacheable and localStorage frontend caching. Used ngx-echarts for better analytical UI visualization. Optimized data retrieval using MySQL materialized views and single API call architecture. Achieved 85% faster load times with cache-first architecture.",
         "Built client support system with threaded discussions with Angular 9 Reactive Forms, Material Design UI, RxJS observables for asynchronous data flow, and real-time notifications with WebSocket. Implemented one-to-many thread-reply architecture with Spring Data JPA, Hibernate Envers auditing, and pagination using Spring Boot and JPA, reducing support tickets by 60%.",
-        "Upgraded frontend portal from Angular 9 to Angular 15, improving performance and maintainability",
+        "Upgraded enterprise Angular portal from v9 to v15 across 6 major versions, modernising the build pipeline, migrating 15+ lazy-loaded feature modules, 100+ components, and 35+ services while resolving breaking changes in Angular Material, TypeScript, and RxJS.",
         "Redesigned notification panel, cutting notification incidents by 70%",
         "Implemented Okta login event tracking for enhanced security monitoring"
       ]
@@ -40,9 +40,9 @@ const Experience = () => {
       period: "December 2021 - July 2022",
       description: "Worked on large-scale hospitality management system for LosjiTech using Angular, NestJS, TypeScript, PostgreSQL, and AWS in an 11-member team.",
       achievements: [
-        "Introduced and implemented diagram maker tool for articles using GoJS library",
-        "Automated nightly data synchronization with cron jobs, saving 25 hours monthly",
-        "Developed password recovery system with AWS Cognito API, eliminating 90% of related support tickets",
+        "Designed and implemented an interactive diagram builder for articles using GoJS, enabling dynamic text customization (bold, italic, font resizing) with two-way data binding and immutable state management via Immer, while resolving complex binding and inspector panel issues to ensure seamless real-time updates.",
+        "Automated nightly data synchronization with cron jobs to automatically update customers from the company schema to the local database, saving 25 hours monthly",
+        "Developed password recovery system with a component to enter email address and added validation methods. Added AWS Cognito to call forgotPassword() API. Also displaying the email message with the verification code to create a new password for the user, eliminating 90% of related support tickets",
         "Awarded Best Industrial Trainee In Sri Lanka 2021/2022 by Institution of Engineers Sri Lanka"
       ]
     }
