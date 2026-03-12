@@ -56,13 +56,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      <button
-        onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
-      >
-        <ChevronDown className="w-8 h-8 text-slate-400" />
-      </button>
     </section>
   );
 };
