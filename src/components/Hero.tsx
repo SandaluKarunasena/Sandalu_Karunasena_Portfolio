@@ -22,7 +22,7 @@ const Hero = () => {
             Experienced in web and mobile development, with a focus on user experience and performance.
           </p>
           
-          <div className="flex justify-center space-x-6 mb-16">
+          <div className="flex justify-center space-x-6">
             <a
               href="https://github.com/SandaluKarunasena"
               target="_blank"
